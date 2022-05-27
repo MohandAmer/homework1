@@ -19,3 +19,30 @@ Route::get('myname', function () {
 Route::get('/', function () {
     return view('welcome');
 });
+Route::prefix('3Bounce')->group(function(){
+    Route::get('Mahmmoud fq',function(){
+       return "Bounce 3";
+    });
+    Route::get('Mohand Amer',function(){
+       return "Bounce 100";
+    });
+    Route::get('Haythem abo shaoeesh',function(){
+       return "Bounce 1";
+    });
+ });
+ 
+ 
+ Route::get('num/{num}',function($num){
+    return "number id is :".$num ;
+ });
+ 
+ 
+ Route::redirect("Loginfacebook","https://www.facebook.com/mohand.amer.3386");
+ 
+ 
+ Route::get('login', 'App\Http\Controllers\Controller@login');
+ 
+ 
+ Route::get('one',function(){
+    return 'Mohand Amer!2bounce';
+ });
