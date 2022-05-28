@@ -12,6 +12,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('app',function(){
+   return view('site.app');
+});
+Route::get('table',function(){
+   return view('site.table');
+});
+
 Route::get('myname', function () {
     return "Wlecome to laeavel mohanda emr";
 });
